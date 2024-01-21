@@ -28,6 +28,7 @@ slidesContainerEl.innerHTML = slidesHtml;
 // * genero i dots
 let dotsHtml = "";
 for (let i = 0; i < slides.length; i++) {
+    // **qui uso l'operatore ternario
     const activeClass = i == slideIndex ? "active" : "";
     dotsHtml += `<div class="dot ${activeClass}"></div>`;
 }
