@@ -34,5 +34,5 @@ Consigli del giorno:
 
 - creo un EVENTO 
     - quando faccio click su una freccia cambio l'immagine visualizzata
-        - SE clicco sulla freccia in alto vedrò l'immagine precedente
-        - SE clicco sulla freccia in basso  vedrò l'immagine successiva
+        - SE clicco sulla freccia in alto vedrò l'immagine successiva
+        - SE clicco sulla freccia in basso  vedrò l'immagine precedente
