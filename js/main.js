@@ -35,7 +35,7 @@ for (let i = 0; i < slides.length; i++) {
 dotsContainerEl.innerHTML = dotsHtml;
 
 
-// ! GESTISCO L'EVENTO DEL CLICK DI ARROW-NEXT
+// ! GESTISCO L'EVENTO DEL CLICK DI ARROW-PREV
 
 arrowPrevEL.addEventListener("click", function () {
     // * recupero tutte le slides
@@ -66,7 +66,7 @@ arrowPrevEL.addEventListener("click", function () {
 });
 
 
-// !  GESTISCO L'EVENTO DEL CLICK DI ARROW-PREV
+// !  GESTISCO L'EVENTO DEL CLICK DI ARROW-NEXT
 
 arrowNextEL.addEventListener("click", function () {
     // * recupero tutte le slides
