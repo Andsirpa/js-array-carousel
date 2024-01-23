@@ -95,3 +95,41 @@ arrowNextEL.addEventListener("click", function () {
     const newDot = allDots[slideIndex];
     newDot.classList.add("active");
 });
+
+
+// creo una funzione per lo scorrimento automatico delle immagini
+function goToSlide() {
+    const allSlides = document.getElementsByClassName('slide')
+    const allDots = document.getElementsByClassName('dot')
+
+    // tolgo la classe 'active' all'immagine corrente
+    const oldSlide = allSlides[slideIndex]
+    oldSlide.classList.remove('active')
+    const oldDot = allDots[slideIndex]
+    oldDot.classList.remove('active')
+
+
+    if (slideIndex >= allSlides.length - 1) {
+        slideIndex = 0
+    } else {
+        slideIndex++
+    }
+
+    // assegno la classe 'active' all'immagine successiva
+    const newSlide = allSlides[slideIndex]
+    newSlide.classList.add('active')
+    const newDot = allSlides[slideIndex]
+    newDot.classList.add('active')
+}
+
+
+// creo una funzione per gestire lo scorrimento automatico
+function autoSlide() {
+    setInterval(goToSlide, 3000)
+}
+
+// chiamo la funzione 
+autoSlide()
+
+
+
